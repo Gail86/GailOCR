@@ -11,6 +11,8 @@ def check_and_install(package_name):
         print(f'未找到 {package_name}，正在尝试安装...')
         # 使用pip安装缺失的包
         subprocess.check_call([sys.executable, "-m", "pip", "install", package_name])
+        #中国大陆用户使用阿里云源进行库的补齐
+        #subprocess.check_call([sys.executable, "-m", "pip", "install", package_name, "-i", "https://mirrors.aliyun.com/pypi/simple/"]) 
         print(f'{package_name} 安装完成并加载成功')
 
 # 对核心库进行验证，如果缺失则进行安装
