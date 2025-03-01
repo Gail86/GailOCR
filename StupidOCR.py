@@ -47,6 +47,7 @@ from datetime import datetime
 #授权开启方式，设置key，设置expire_at，把verify_authorization的值改成true即可，收到请求时，验证key是否存在如果存在则验证key是否为有效期
 #返回值：正常验证码识别结果、Authorization does not exist、Invalid expiration date format、Authorization expired
 config_path = 'config.json'
+vers = '1.1.1'
 # 默认配置
 default_config = {
     "authorized_keys": [
@@ -134,7 +135,7 @@ description1 = """
 - **端口自定义**：配置文件里增加了端口项，避免编译成exe后无法修改端口的问题。
 """
 
-app = FastAPI(title="StupidOCR", description=description1, version="1.0.8")
+app = FastAPI(title="StupidOCR", description=description1, version="1.1.1")
 app.mount("/assets", StaticFiles(directory="dist/assets"), name="assets")
 
 
@@ -308,9 +309,10 @@ if __name__ == '__main__':
 
                     软件主页：http://127.0.0.1:{port_from_config}
                     开发文档：http://localhost:{port_from_config}/docs
+                    当前版本：{vers}
                    
 
-                    代码编写：81NewArk
+                    代码编写：81NewArk/Gail86改
 
        ''')
 
