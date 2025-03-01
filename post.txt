@@ -1,0 +1,53 @@
+示例请求体/Example of Request Body
+/api/ocr/image
+Json
+
+{
+    "key": "valid_key",
+    "img_base64": "your_base64_encoded_image_here"
+}
+/api/ocr/number
+Json
+
+{
+    "key": "valid_key",
+    "img_base64": "your_base64_encoded_image_here"
+}
+/api/ocr/compute
+Json
+
+{
+    "key": "valid_key",
+    "img_base64": "your_base64_encoded_image_here"
+}
+/api/ocr/alphabet
+Json
+
+{
+    "key": "valid_key",
+    "img_base64": "your_base64_encoded_image_here"
+}
+/api/ocr/detection
+Json
+
+{
+    "key": "valid_key",
+    "img_base64": "your_base64_encoded_image_here"
+}
+/api/ocr/slider/gap
+Json
+
+{
+    "key": "valid_key",
+    "gapimg_base64": "your_base64_encoded_gap_image_here",
+    "fullimg_base64": "your_base64_encoded_full_image_here"
+}
+/api/ocr/slider/shadow
+Json
+
+{
+    "key": "valid_key",
+    "gapimg_base64": "your_base64_encoded_shadow_image_here",
+    "fullimg_base64": "your_base64_encoded_full_image_here"
+}
+请将 your_base64_encoded_image_here 和 your_base64_encoded_gap_image_here 替换为实际的 Base64 编码图像数据。
