@@ -25,7 +25,7 @@ DDDDOCR
 > 
 >支持部署 <strong>本地</strong> 和 <strong>服务器</strong> .
 > 
-> 内嵌开发者文档：http://127.0.0.1:6688/docs
+> 内嵌开发者文档：http://127.0.0.1:{port}/docs
 ## 更新内容：
 * 修复开发者文档部分BUG
 
